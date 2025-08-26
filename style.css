@@ -10,7 +10,8 @@ body {
 .container {
     height: 75vh;
     width: 75vh;
-    background-color: #747eea;
+    background-color: #fff;
+    border: 1px solid #000;
     display: flex;
     flex-wrap: wrap;    
 }

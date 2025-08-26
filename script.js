@@ -14,7 +14,16 @@ function createGrid(size) {
 
 
         pixel.addEventListener("mouseenter", () => {
-            pixel.style.backgroundColor = "white";
+            let r = Math.floor(Math.random() * 176) + 80;
+            let g = Math.floor(Math.random() * 176) + 80;
+            let b = Math.floor(Math.random() * 176) + 80;
+            //let color = '#'+Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+            pixel.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+            //let opacity = parseFloat(pixel.style.opacity) || 0;
+            //let opacityHover = Math.min(opacity + 0.2, 1);
+
+            //pixel.style.opacity = opacityHover;
+
         })
     }
 }
