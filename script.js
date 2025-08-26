@@ -20,10 +20,16 @@ function createGrid(size) {
     }
 }
 
+createGrid(16);
+
 let newGrid = document.querySelector("#createNewGrid");
 
 newGrid.addEventListener('click', () => {
     newSize = Number(prompt("Grid size: "));
+
+    // taking the container variable with the "div container" to clean everything in it
+    container.innerHTML = "";
+    
     createGrid(newSize);
 }
 
