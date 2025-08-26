@@ -1,5 +1,4 @@
 let container = document.querySelector(".container");
-let size = 16;
 
 function createGrid(size) {
     for(let i = 0; i < size * size; i++) {
@@ -29,8 +28,19 @@ newGrid.addEventListener('click', () => {
 
     // taking the container variable with the "div container" to clean everything in it
     container.innerHTML = "";
-    
+
     createGrid(newSize);
 }
 
 )
+
+let clearAll = document.querySelector(".clearGrid");
+let pixelsSelector = document.querySelectorAll(".pixel1");
+
+clearAll.addEventListener('click', () => {
+    pixelsSelector.forEach(pixel => {
+        pixel.style.backgroundColor= "transparent";
+    })
+}
+)
+
