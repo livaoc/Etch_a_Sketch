@@ -5,13 +5,41 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#pageContainer {
+    display: flex;
+    flex-direction: row;
 }
 
 .container {
-    height: 75vh;
-    width: 75vh;
+    height: 80vh;
+    width: 80vh;
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #1a1a1a;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    padding: 10px;   
+    margin-top: 10px; 
+}
+
+#buttonsContainer {
+    height: auto;
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+button {
+    background-color: #eee;
+    border: 1px solid #afafaf;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px;
 }
